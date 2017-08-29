@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margin around the floating action button in CatalogActivity -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Common margin value used throughout the app -->
+    <dimen name="margin_twenty_four">24dp</dimen>
+    <dimen name="margin_twelve">12dp</dimen>
+    <dimen name="activity_margin">8dp</dimen>
+    <dimen name="margin_two">2dp</dimen>
+
+    <!-- Common padding values used throughout the app -->
+    <dimen name="padding_sixteen">16dp</dimen>
+    <dimen name="padding_eight">8dp</dimen>
+    <dimen name="padding_six">6dp</dimen>
+    <dimen name="padding_four">4dp</dimen>
+    <dimen name="padding_two">2dp</dimen>
+
+    <!-- The height of each list item -->
+    <dimen name="list_item_height">112dp</dimen>
+
+    <!-- The height of the product image for each list item -->
+    <dimen name="list_item_image_height">110dp</dimen>
+
+    <!-- Dimen for layout_width="0dp" -->
+    <dimen name="width_zero">0dp</dimen>
+
+    <!-- Dimensions for Image in the Detail View -->
+    <dimen name="detail_image_width">320dp</dimen>
+    <dimen name="detail_image_height">150dp</dimen>
+
+    <!-- Dimension for dividerHeight in the ListView  -->
+    <dimen name="dividerHeight">1dp</dimen>
+
+
+</resources>

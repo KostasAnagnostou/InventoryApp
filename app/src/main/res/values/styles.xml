@@ -1,0 +1,405 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Style for a category in the editor -->
+    <style name="CategoryStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">@dimen/padding_sixteen</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+
+    <!-- Style for an EditText field in the editor -->
+    <style name="EditorFieldStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:imeOptions">flagNoFullscreen</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <!-- Style for the measurement units for an EditText field in the editor -->
+    <style name="EditorUnitsStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">@dimen/padding_sixteen</item>
+        <item name="android:paddingTop">@dimen/padding_sixteen</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+
+    <!-- ........... Style for list_item.xml ............ -->
+
+    <!-- Style for the main Layout -->
+    <style name="ListItemLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:descendantFocusability">blocksDescendants</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Style for the image -->
+    <style name="ListItemImage">
+        <item name="android:layout_width">@dimen/width_zero</item>
+        <item name="android:layout_height">@dimen/list_item_image_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_marginLeft">@dimen/margin_two</item>
+    </style>
+
+    <!-- Style for the Name Layout -->
+    <style name="ListLayoutName">
+        <item name="android:layout_width">@dimen/width_zero</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.5</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/padding_six</item>
+    </style>
+
+    <!-- Style for the Product Name Text -->
+    <style name="ListItemNameText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:paddingLeft">@dimen/padding_two</item>
+        <item name="android:paddingRight">@dimen/padding_two</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <!-- Style for the Offer Price Layout -->
+    <style name="ListItemOfferPriceLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">@dimen/padding_four</item>
+    </style>
+
+    <!-- Style for the Offer Price Text -->
+    <style name="ListItemOfferPriceText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- Style for the Price Layout -->
+    <style name="ListItemPriceLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">@dimen/padding_four</item>
+    </style>
+
+    <!-- Style for the Price Text -->
+    <style name="ListItemPriceText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Style for the Quantity Layout -->
+    <style name="ListItemQuantityLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Style for the Special Offer Layout -->
+    <style name="ListItemSpecialOfferLayout">
+        <item name="android:layout_width">@dimen/width_zero</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Style for the Special Offer Image Layout -->
+    <style name="ListItemSpecialOfferImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/padding_eight</item>
+    </style>
+
+    <!-- Style for the Sale Button -->
+    <style name="ListItemSaleButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <!-- ........... Style for activity_detail.xml ............ -->
+
+    <!-- Style for the main layout  -->
+    <style name="DetailViewLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/activity_margin</item>
+    </style>
+
+    <!-- Style for the Overview Label -->
+    <style name="DetailOverviewLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/padding_sixteen</item>
+        <item name="android:layout_marginTop">@dimen/margin_twelve</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/padding_sixteen</item>
+        <item name="android:paddingTop">@dimen/margin_twelve</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <!-- Style for the product name layout -->
+    <style name="DetailProductNameLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Style for the Name Edit Text Layout  -->
+    <style name="DetailNameEditLayout">
+        <item name="android:layout_width">@dimen/width_zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Style for the name Edit Text  -->
+    <style name="DetailProductPriceLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Style for the Edit Price Layout   -->
+    <style name="DetailPriceEditLayout">
+        <item name="android:layout_width">@dimen/width_zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Style for the currency  -->
+    <style name="DetailCurrencyEuro">
+        <item name="android:layout_width">@dimen/width_zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Style for the Quantity Layout  -->
+    <style name="DetailQuantityLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Style for the Quantity Label  -->
+    <style name="DetailQuantityLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/padding_sixteen</item>
+        <item name="android:paddingBottom">@dimen/padding_sixteen</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for the Edit Text Layout -->
+    <style name="DetailQuantityEditLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Style for the Decrease Button Quantity  -->
+    <style name="DetailButtonDecrease">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/padding_sixteen</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <!-- Style for the Quantity Edit Text -->
+    <style name="DetailQuantityEditText">
+        <item name="android:layout_width">@dimen/width_zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/margin_twenty_four</item>
+        <item name="android:layout_marginRight">@dimen/margin_twenty_four</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:imeOptions">flagNoFullscreen</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <!-- Style for the Increase Button Quantity  -->
+    <style name="DetailButtonIncrease">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/padding_sixteen</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <!-- Style for the Supplier Name Layout -->
+    <style name="DetailSupplierNameLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">@dimen/padding_sixteen</item>
+    </style>
+
+    <!-- Style for the Supplier Email Layout  -->
+    <style name="DetailSupplierEmailLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Style for the Order More Button -->
+    <style name="DetailOrderMoreButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/padding_sixteen</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">@dimen/padding_six</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- Style for the Image Category Layout -->
+    <style name="DetailmageCategoryLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/padding_sixteen</item>
+    </style>
+
+    <!-- Style for the Insert Image Button -->
+    <style name="DetailAddImageButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:padding">@dimen/padding_sixteen</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <!-- Style for the Product Image  -->
+    <style name="DetailProductImage">
+        <item name="android:layout_width">@dimen/detail_image_width</item>
+        <item name="android:layout_height">@dimen/detail_image_height</item>
+        <item name="android:layout_below">@id/edit_product_image</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/padding_sixteen</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- ........... Style for activity_main.xml ............ -->
+
+    <!-- Style for the ListView -->
+    <style name="ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:divider">@color/divider</item>
+        <item name="android:dividerHeight">@dimen/dividerHeight</item>
+    </style>
+
+    <!-- Style for the Floating Action Button -->
+    <style name="FloatingActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+    </style>
+
+    <!-- ........... Style for the empty_view in activity_main.xml ............ -->
+
+    <!-- Style for the main relative layout -->
+    <style name="EmptyViewLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/color_white</item>
+    </style>
+
+    <!-- Style for the relative nested layout -->
+    <style name="EmptyViewNestedLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- Style for the ImageView -->
+    <style name="EmptyViewImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:padding">@dimen/padding_sixteen</item>
+    </style>
+
+    <!-- Style for the Title -->
+    <style name="EmptyViewTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/empty_store_image</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingTop">@dimen/padding_eight</item>
+        <item name="android:paddingBottom">@dimen/padding_eight</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!-- Style for the subtitle -->
+    <style name="EmptyViewSubtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/empty_title_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:padding">@dimen/padding_sixteen</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+
+</resources>

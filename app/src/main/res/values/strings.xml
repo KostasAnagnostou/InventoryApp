@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+
+    <!-- Label for overflow menu option that inserts fake pet data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Title for the activity to add a new product -->
+    <string name="editor_activity_title_new_product">Add a Product</string>
+
+    <!-- Title for the activity to add a new product -->
+    <string name="editor_activity_title_edit_product">Edit Product</string>
+
+    <!-- Label for editor menu option to save pet and leave editor  -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor menu option to save pet and leave editor  -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Label for overflow menu option that deletes all product data in the app -->
+    <string name="action_delete_all_entries">Delete All Products</string>
+
+    <!-- Header for Overview information in the editor -->
+    <string name="overview_header">Overview</string>
+
+    <!-- Label for Product Name information in the editor -->
+    <string name="category_product">Product Name:</string>
+
+    <!-- Label for Price information in the editor -->
+    <string name="category_price">Price:</string>
+
+    <!-- Default Currency information in the editor -->
+    <string name="price_currency">€</string>
+
+    <!-- Text for Decrease Quantity -->
+    <string name="decrease_quantity">-</string>
+
+    <!-- Text for Increase Quantity -->
+    <string name="increase_quantity">+</string>
+
+    <!-- Label for Offer Price information in the editor -->
+    <string name="category_price_offer">Offer Price: </string>
+
+    <!-- Label for Product Quantity information in the editor  -->
+    <string name="category_quantity">Quantity:</string>
+
+    <!-- Label for Supplier Name information in the editor  -->
+    <string name="category_supplier_name">Supplier Name:</string>
+
+    <!-- Label for Supplier Email information in the editor  -->
+    <string name="category_supplier_email">Supplier Email:</string>
+
+    <!-- Label for Image in the editor -->
+    <string name="category_image">Product Image</string>
+
+    <!-- Text for Button Sale in the list_item  -->
+    <string name="button_sale">Sale</string>
+
+    <!-- Text for button order more in the editor -->
+    <string name="button_order_more">Order More From Supplier</string>
+
+    <!-- Text for the Email subject message -->
+    <string name="subject_supplier_order">New order for:\u0020</string>
+
+    <!-- Text for the Email Intent -->
+    <string name="mail_to">mailto:</string>
+
+    <!-- Text for the setType() in the Email Intent -->
+    <string name="type_text_plain">text/plain</string>
+
+    <!-- Text for the Intent.createChooser String in the Email Intent -->
+    <string name="create_chooser_email">Send Email&#8230;</string>
+
+    <!-- Text for Button Image in the editor -->
+    <string name="category_button_image">Insert an Image</string>
+
+    <!-- Text hint for Product Price field in the editor -->
+    <string name="hint_product_price">e.g. 24.99</string>
+
+    <!-- Text hint for Offer Price field in the editor -->
+    <string name="hint_offer_price">e.g. 19.99</string>
+
+    <!-- Text hint for Supplier Name field in the editor -->
+    <string name="hint_product_supplier_name">e.g. Supplier Electronics </string>
+
+    <!-- Text hint for Supplier Email field in the editor -->
+    <string name="hint_product_supplier_email">e.g. supplier@gmail.com</string>
+
+    <!-- Choose Image -->
+    <string name="choose_image">Choose Image</string>
+
+    <!-- Toast Messages -->
+    <string name="editor_insert_product_failed">There was an error with the insertion.</string>
+    <string name="editor_insert_product_successful">The insertion was successful.</string>
+    <string name="editor_update_product_failed">There was an error with the update.</string>
+    <string name="editor_update_product_successful">The update of the product was successful.</string>
+    <string name="editor_delete_product_failed">There was an error with the deletion.</string>
+    <string name="editor_delete_product_successful">The deletion of the product was successful.</string>
+    <string name="sale_zero_quantity">This product is currently out of stock.</string>
+    <string name="toast_decrease_button">You cannot set a value lower than zero.</string>
+    <string name="delete_products_succeed">All the products have been deleted. </string>
+
+    <!-- Toast Messages - Validate Inputs -->
+    <string name="empty_name_product">The Name of the Product is required!</string>
+    <string name="empty_price_value">The Price of the Product is required!</string>
+    <string name="empty_quantity_value">The Quantity requires a number (0, 1, 2, 3,&#8230;,++); </string>
+    <string name="empty_supplier_name">The Supplier Name is required!</string>
+    <string name="empty_supplier_email">The Supplier Email is not valid!</string>
+    <string name="empty_image">An image of the Product is required!</string>
+    <string name="invalid_offer_price">The Offer Price must be lower than price!</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current product [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current product [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this product?</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current product [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_products_msg">Delete all the products?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current product [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current pet  -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Title & subtitle for the title in the empty view  -->
+    <string name="empty_view_title">Open your Store!!!</string>
+    <string name="empty_view_subtitle">Add your products to the catalog by clicking the add button in the bottom right corner!</string>
+
+    <!-- Strings for images content description -->
+    <string name="list_image_description">Product Image</string>
+    <string name="list_special_offer_description">Special Offer Image</string>
+    <string name="empty_view_image_description">Storefront</string>
+
+
+</resources>

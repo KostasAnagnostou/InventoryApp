@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item in the list of products -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ListItemLayout">
+
+    <!-- Image of the product -->
+    <ImageView
+        android:id="@+id/list_item_image"
+        style="@style/ListItemImage"
+        android:contentDescription="@string/list_image_description"
+        android:src="@drawable/test_image" />
+
+    <!-- Layout for Name, Price, Quantity Info -->
+    <LinearLayout style="@style/ListLayoutName">
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/product_name"
+            style="@style/ListItemNameText"
+            tools:text="Product Name" />
+
+        <!-- Layout for Offer Price - visible if the product has offer  -->
+        <LinearLayout style="@style/ListItemOfferPriceLayout">
+
+            <!-- Visible if the product has Offer Price-->
+            <TextView
+                android:id="@+id/has_offer_view"
+                style="@style/ListItemOfferPriceText" />
+
+        </LinearLayout>
+
+        <!-- Layout for Price -->
+        <LinearLayout style="@style/ListItemPriceLayout">
+
+            <!-- Price Value -->
+            <TextView
+                android:id="@+id/price"
+                style="@style/ListItemPriceText"
+                tools:text="Price: 19 €" />
+
+        </LinearLayout>
+
+        <!-- Layout for Quantity -->
+        <LinearLayout style="@style/ListItemQuantityLayout">
+
+            <!-- Quantity Value -->
+            <TextView
+                android:id="@+id/quantity"
+                style="@style/ListItemPriceText"
+                tools:text="Quantity: 20" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Layout for Special Offer and Button Sale -->
+    <LinearLayout style="@style/ListItemSpecialOfferLayout">
+
+        <!-- Special Offer Image if the product has offer price -->
+        <ImageView
+            android:id="@+id/special_offer"
+            style="@style/ListItemSpecialOfferImage"
+            android:contentDescription="@string/list_special_offer_description"
+            android:src="@drawable/special_offer" />
+
+        <!-- Sale Button -->
+        <Button
+            android:id="@+id/sale_button"
+            style="@style/ListItemSaleButton"
+            android:text="@string/button_sale" />
+    </LinearLayout>
+
+</LinearLayout>

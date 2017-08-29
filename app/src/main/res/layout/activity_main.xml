@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for the list of pets -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/list"
+        style="@style/ListView" />
+
+    <!-- Empty view for the list -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/empty_view"
+        style="@style/EmptyViewNestedLayout">
+
+        <!-- Image for the empty view -->
+        <ImageView
+            android:id="@+id/empty_store_image"
+            style="@style/EmptyViewImage"
+            android:contentDescription="@string/empty_view_image_description"
+            android:src="@drawable/storefront_empty_view" />
+
+        <!-- Title for the empty view -->
+        <TextView
+            android:id="@+id/empty_title_text"
+            style="@style/EmptyViewTitle"
+            android:text="@string/empty_view_title" />
+
+        <!-- Subtitle for the empty view -->
+        <TextView
+            android:id="@+id/empty_subtitle_text"
+            style="@style/EmptyViewSubtitle"
+            android:text="@string/empty_view_subtitle" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/FloatingActionButton"
+        android:src="@drawable/add_sign" />
+
+</RelativeLayout>

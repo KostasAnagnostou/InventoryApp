@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?><!-- ScrollView Vertical -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Layout for the editor -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/DetailViewLayout"
+        tools:context=".DetailActivity">
+
+        <!-- Overview Label -->
+        <TextView
+            android:id="@+id/header_overview"
+            style="@style/DetailOverviewLabel"
+            android:text="@string/overview_header" />
+
+        <!-- Layout for Product Name Label -->
+        <LinearLayout
+            android:id="@+id/container_product"
+            style="@style/DetailProductNameLayout">
+
+            <!-- Label for Product Name -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_product" />
+
+            <!-- Layout for Input field -->
+            <LinearLayout style="@style/DetailNameEditLayout">
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/edit_product_name"
+                    style="@style/EditorFieldStyle"
+                    android:inputType="text" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product Price category -->
+        <LinearLayout
+            android:id="@+id/container_product_price"
+            style="@style/DetailProductPriceLayout">
+
+            <!-- Label for the Price -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_price" />
+
+            <!-- Input fields -->
+            <LinearLayout style="@style/DetailPriceEditLayout">
+
+                <!-- Price field -->
+                <EditText
+                    android:id="@+id/edit_product_price"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_product_price"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <!-- Currency Euro-->
+            <TextView
+                style="@style/DetailCurrencyEuro"
+                android:text="@string/price_currency" />
+
+        </LinearLayout>
+
+        <!-- Offer Price category -->
+        <LinearLayout style="@style/DetailProductPriceLayout">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_price_offer" />
+
+            <!-- Input field -->
+            <LinearLayout style="@style/DetailPriceEditLayout">
+
+                <!-- Offer Price field -->
+                <EditText
+                    android:id="@+id/edit_offer_price"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_offer_price"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/DetailCurrencyEuro"
+                android:text="@string/price_currency" />
+
+        </LinearLayout>
+
+        <!-- Quantity category -->
+        <LinearLayout
+            android:id="@+id/container_quantity"
+            style="@style/DetailQuantityLayout">
+
+            <!-- Label for Quantity -->
+            <TextView
+                style="@style/DetailQuantityLabel"
+                android:text="@string/category_quantity" />
+
+            <!-- Input field -->
+            <LinearLayout style="@style/DetailQuantityEditLayout">
+
+                <!-- Decrease Button -->
+                <Button
+                    android:id="@+id/decrease_quantity"
+                    style="@style/DetailButtonDecrease"
+                    android:text="@string/decrease_quantity" />
+
+                <!-- Quantity field -->
+                <EditText
+                    android:id="@+id/edit_product_quantity"
+                    style="@style/DetailQuantityEditText" />
+
+                <!-- Increase Button -->
+                <Button
+                    android:id="@+id/increase_quantity"
+                    style="@style/DetailButtonIncrease"
+                    android:text="@string/increase_quantity" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Supplier Name category -->
+        <LinearLayout
+            android:id="@+id/container_supplier_name"
+            style="@style/DetailSupplierNameLayout">
+
+            <!-- Label for Supplier Name -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_supplier_name" />
+
+            <!-- Input field Layout-->
+            <LinearLayout style="@style/DetailNameEditLayout">
+
+                <!-- Supplier Name field -->
+                <EditText
+                    android:id="@+id/edit_supplier_name"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_product_supplier_name"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Supplier Email category -->
+        <LinearLayout
+            android:id="@+id/container_supplier_email"
+            style="@style/DetailSupplierEmailLayout">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_supplier_email" />
+
+            <!-- Input field -->
+            <LinearLayout style="@style/DetailNameEditLayout">
+
+                <!-- Supplier Name field -->
+                <EditText
+                    android:id="@+id/edit_supplier_email"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_product_supplier_email"
+                    android:inputType="textEmailAddress" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Order more from supplier Button -->
+        <Button
+            android:id="@+id/order_from_supplier"
+            style="@style/DetailOrderMoreButton"
+            android:text="@string/button_order_more" />
+
+        <!-- Image category Layout -->
+        <RelativeLayout
+            android:id="@+id/container_image"
+            style="@style/DetailmageCategoryLayout">
+
+            <!-- Button to add an Image -->
+            <Button
+                android:id="@+id/edit_product_image"
+                style="@style/DetailAddImageButton"
+                android:text="@string/category_button_image" />
+
+            <!-- Product Image here -->
+            <ImageView
+                android:id="@+id/product_image"
+                style="@style/DetailProductImage"
+                android:contentDescription="@string/list_image_description" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
